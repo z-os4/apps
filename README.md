@@ -1,6 +1,12 @@
-# @z-os/apps v4.2.0
+# @z-os/apps
 
-zOS Apps - Built-in applications for zOS desktop environment.
+[![npm version](https://img.shields.io/npm/v/@z-os/apps.svg)](https://www.npmjs.com/package/@z-os/apps)
+[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://z-os4.github.io/apps/)
+[![CI](https://github.com/z-os4/apps/actions/workflows/ci.yml/badge.svg)](https://github.com/z-os4/apps/actions/workflows/ci.yml)
+
+zOS Apps - Built-in applications for zOS desktop environment. v4.2.0
+
+**[📚 Full Documentation](https://z-os4.github.io/apps/)**
 
 ## Install
 ```bash
