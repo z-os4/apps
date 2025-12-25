@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zOS Apps Documentation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+  <nav class="bg-gray-800/50 backdrop-blur-xl border-b border-gray-700 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">📦</span>
+        <span class="font-bold text-xl">zOS Apps</span>
+        <span class="text-gray-400 text-sm">v4.2.0</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#apps" class="text-gray-300 hover:text-white">Apps</a>
+        <a href="#registry" class="text-gray-300 hover:text-white">Registry</a>
+        <a href="#building" class="text-gray-300 hover:text-white">Building Apps</a>
+        <a href="https://github.com/z-os4/apps" class="text-gray-300 hover:text-white">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-20 px-4 text-center">
+    <h1 class="text-5xl font-bold mb-4">
+      <span class="gradient-text">zOS Apps</span>
+    </h1>
+    <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+      A collection of beautiful, native apps for the zOS desktop environment.
+    </p>
+    <div class="flex justify-center gap-4">
+      <a href="#apps" class="bg-cyan-600 hover:bg-cyan-700 px-6 py-3 rounded-lg font-medium">
+        Browse Apps
+      </a>
+      <a href="https://github.com/z-os4/apps" class="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg font-medium">
+        View on GitHub
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 pb-20">
+    <section id="apps" class="mb-16">
+      <h2 class="text-3xl font-bold mb-6">Bundled Apps</h2>
+      <p class="text-gray-400 mb-8">12 apps ship with zOS by default. All apps are v4.2.0.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Calculator -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-3xl shrink-0">
+            🧮
+          </div>
+          <div>
+            <h3 class="font-semibold">Calculator</h3>
+            <p class="text-sm text-gray-400">Standard and scientific modes with keyboard support.</p>
+            <span class="text-xs text-cyan-400 mt-1 inline-block">utilities</span>
+          </div>
+        </div>
+
+        <!-- Terminal -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center text-3xl shrink-0">
+            ⬛
+          </div>
+          <div>
+            <h3 class="font-semibold">Terminal</h3>
+            <p class="text-sm text-gray-400">Command-line interface with zsh-like shell.</p>
+            <span class="text-xs text-purple-400 mt-1 inline-block">developer</span>
+          </div>
+        </div>
+
+        <!-- Notes -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center text-3xl shrink-0">
+            📝
+          </div>
+          <div>
+            <h3 class="font-semibold">Notes</h3>
+            <p class="text-sm text-gray-400">Elegant note-taking with rich text support.</p>
+            <span class="text-xs text-green-400 mt-1 inline-block">productivity</span>
+          </div>
+        </div>
+
+        <!-- TextPad -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-3xl shrink-0">
+            📄
+          </div>
+          <div>
+            <h3 class="font-semibold">TextPad</h3>
+            <p class="text-sm text-gray-400">Simple text editor for quick edits.</p>
+            <span class="text-xs text-green-400 mt-1 inline-block">productivity</span>
+          </div>
+        </div>
+
+        <!-- Clock -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center text-3xl shrink-0">
+            🕐
+          </div>
+          <div>
+            <h3 class="font-semibold">Clock</h3>
+            <p class="text-sm text-gray-400">World clock with multiple timezones.</p>
+            <span class="text-xs text-cyan-400 mt-1 inline-block">utilities</span>
+          </div>
+        </div>
+
+        <!-- Calendar -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center text-3xl shrink-0">
+            📅
+          </div>
+          <div>
+            <h3 class="font-semibold">Calendar</h3>
+            <p class="text-sm text-gray-400">Beautiful calendar with event support.</p>
+            <span class="text-xs text-green-400 mt-1 inline-block">productivity</span>
+          </div>
+        </div>
+
+        <!-- Weather -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-3xl shrink-0">
+            🌤️
+          </div>
+          <div>
+            <h3 class="font-semibold">Weather</h3>
+            <p class="text-sm text-gray-400">Real-time weather forecasts.</p>
+            <span class="text-xs text-cyan-400 mt-1 inline-block">utilities</span>
+          </div>
+        </div>
+
+        <!-- Photos -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-3xl shrink-0">
+            🖼️
+          </div>
+          <div>
+            <h3 class="font-semibold">Photos</h3>
+            <p class="text-sm text-gray-400">Photo viewer and gallery.</p>
+            <span class="text-xs text-yellow-400 mt-1 inline-block">entertainment</span>
+          </div>
+        </div>
+
+        <!-- Music -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center text-3xl shrink-0">
+            🎵
+          </div>
+          <div>
+            <h3 class="font-semibold">Music</h3>
+            <p class="text-sm text-gray-400">Music player with playlist support.</p>
+            <span class="text-xs text-yellow-400 mt-1 inline-block">entertainment</span>
+          </div>
+        </div>
+
+        <!-- Stickies -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-yellow-400 to-amber-500 flex items-center justify-center text-3xl shrink-0">
+            📌
+          </div>
+          <div>
+            <h3 class="font-semibold">Stickies</h3>
+            <p class="text-sm text-gray-400">Desktop sticky notes.</p>
+            <span class="text-xs text-green-400 mt-1 inline-block">productivity</span>
+          </div>
+        </div>
+
+        <!-- System Preferences -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center text-3xl shrink-0">
+            ⚙️
+          </div>
+          <div>
+            <h3 class="font-semibold">System Preferences</h3>
+            <p class="text-sm text-gray-400">Customize your zOS experience.</p>
+            <span class="text-xs text-gray-400 mt-1 inline-block">system</span>
+          </div>
+        </div>
+
+        <!-- App Store -->
+        <div class="bg-gray-800 rounded-xl p-4 flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-3xl shrink-0">
+            🏪
+          </div>
+          <div>
+            <h3 class="font-semibold">App Store</h3>
+            <p class="text-sm text-gray-400">Discover and install apps from GitHub.</p>
+            <span class="text-xs text-gray-400 mt-1 inline-block">system</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="registry" class="mb-16">
+      <h2 class="text-3xl font-bold mb-6">App Registry</h2>
+      <p class="text-gray-400 mb-6">The App Registry manages installed apps and handles installation from GitHub.</p>
+
+      <div class="space-y-6">
+        <div class="bg-gray-800 rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-4">Using the Registry</h3>
+          <pre class="bg-gray-900 rounded-lg p-4 overflow-x-auto"><code class="language-typescript">import { getAppRegistry, BUNDLED_APPS } from '@z-os/apps';
+
+// Get the singleton registry instance
+const registry = getAppRegistry();
+
+// List all installed apps
+const installed = registry.getInstalledApps();
+
+// Install an app from GitHub
+await registry.install({
+  id: 'ai.hanzo.newapp',
+  name: 'New App',
+  version: '1.0.0',
+  // ... other manifest fields
+});
+
+// Check for updates
+const updates = await registry.checkForUpdates();
+
+// Update an app
+await registry.update('ai.hanzo.newapp', '1.1.0');
+
+// Uninstall an app
+registry.uninstall('ai.hanzo.newapp');</code></pre>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-4">App Manifest Interface</h3>
+          <pre class="bg-gray-900 rounded-lg p-4 overflow-x-auto"><code class="language-typescript">interface AppManifest {
+  id: string;           // e.g., "ai.hanzo.calculator"
+  name: string;         // Display name
+  version: string;      // Semantic version
+  description: string;  // Short description
+  icon: string;         // Emoji or URL
+  category: 'productivity' | 'utilities' | 'entertainment' | 'developer' | 'system';
+  author: string;
+  repository: string;   // GitHub repo URL
+  minSdkVersion: string;
+  permissions: string[];
+  screenshots?: string[];
+  releaseNotes?: string;
+}</code></pre>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-4">Listening to Events</h3>
+          <pre class="bg-gray-900 rounded-lg p-4 overflow-x-auto"><code class="language-typescript">// Listen for app installation
+window.addEventListener('zos:app-installed', (e: CustomEvent) => {
+  console.log('App installed:', e.detail.app);
+});
+
+// Listen for app updates
+window.addEventListener('zos:app-updated', (e: CustomEvent) => {
+  console.log('App updated:', e.detail.app);
+});
+
+// Listen for app removal
+window.addEventListener('zos:app-uninstalled', (e: CustomEvent) => {
+  console.log('App removed:', e.detail.appId);
+});</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="building" class="mb-16">
+      <h2 class="text-3xl font-bold mb-6">Building Your Own App</h2>
+
+      <div class="bg-gray-800 rounded-lg p-6">
+        <h3 class="text-xl font-semibold mb-4">Quick Start</h3>
+        <pre class="bg-gray-900 rounded-lg p-4 overflow-x-auto"><code class="language-typescript">import React, { useState } from 'react';
+
+// 1. Define your manifest
+export const manifest = {
+  id: 'com.yourname.myapp',
+  name: 'My App',
+  version: '1.0.0',
+  description: 'A custom zOS app',
+  icon: '🚀',
+  category: 'utilities' as const,
+  author: 'Your Name',
+  repository: 'https://github.com/yourusername/myapp',
+  minSdkVersion: '4.0.0',
+  permissions: ['storage']
+};
+
+// 2. Create your component
+interface MyAppProps {
+  onClose?: () => void;
+}
+
+export function MyApp({ onClose }: MyAppProps) {
+  const [data, setData] = useState('');
+
+  return (
+    &lt;div className="h-full bg-gray-900 text-white p-4"&gt;
+      &lt;h1 className="text-2xl font-bold mb-4"&gt;My App&lt;/h1&gt;
+      &lt;input
+        value={data}
+        onChange={e => setData(e.target.value)}
+        className="w-full bg-gray-800 rounded px-3 py-2"
+        placeholder="Enter something..."
+      /&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default MyApp;</code></pre>
+      </div>
+    </section>
+
+    <section class="text-center py-12 border-t border-gray-700">
+      <h2 class="text-2xl font-bold mb-4">Related Packages</h2>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="https://z-os4.github.io/sdk" class="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg">@z-os/sdk</a>
+        <a href="https://z-os4.github.io/ui" class="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg">@z-os/ui</a>
+        <a href="https://z-os4.github.io/desktop" class="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg">@z-os/desktop</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 py-8 text-center text-gray-400">
+    <p>Built by <a href="https://hanzo.ai" class="text-cyan-400 hover:text-cyan-300">Hanzo AI</a></p>
+    <p class="mt-2">
+      <a href="https://github.com/z-os4" class="hover:text-white">GitHub</a>
+      <span class="mx-2">•</span>
+      <a href="https://npmjs.com/org/z-os" class="hover:text-white">npm</a>
+    </p>
+  </footer>
+
+  <script>hljs.highlightAll();</script>
+</body>
+</html>
