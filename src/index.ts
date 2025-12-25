@@ -35,5 +35,8 @@ export { default as ZStickies } from './apps/ZStickies';
 // System Preferences
 export { default as ZSystemPreferences } from './apps/ZSystemPreferences';
 
+// App Store - Browse & Install apps from github.com/z-os4
+export { default as ZAppStore } from './apps/ZAppStore';
+
 // App Types
 export * from './types';
