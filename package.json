@@ -5,10 +5,7 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "files": ["src", "README.md"],
-  "dependencies": {
-    "@z-os/ui": "4.2.0",
-    "@z-os/sdk": "4.2.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
